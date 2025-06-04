@@ -1,0 +1,22 @@
+name: DiscordWebhook
+version: '${project.version}'
+main: discord.hook.discordWebhook.DiscordWebhook
+api-version: 1.21
+author: YourName
+description: A plugin to send messages to Discord webhooks
+website: https://example.com
+
+commands:
+  webhook:
+    description: Send messages to Discord webhooks
+    usage: /webhook send <message> OR /webhook send <webhook_url> <message>
+    permission: discordwebhook.use
+    permission-message: You don't have permission to use this command!
+
+permissions:
+  discordwebhook.use:
+    description: Allows players to use webhook commands
+    default: op
+  discordwebhook.admin:
+    description: Admin permissions for webhook plugin
+    default: op

@@ -1,0 +1,3 @@
+default-webhook: ""
+include-player-name: false
+webhook-username: "Minecraft Server"
